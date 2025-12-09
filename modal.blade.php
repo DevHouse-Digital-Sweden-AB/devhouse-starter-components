@@ -1,6 +1,12 @@
 {{-- 
     Component: Modal
-    Requires: Tailwind CSS, Alpine.js, Alpine.js Focus plugin
+    Requires: Tailwind CSS, 
+              Alpine.js: https://alpinejs.dev/essentials/installation, 
+              Alpine.js Focus plugin
+    
+    Note: Add the following to global.css:
+    
+    [x-cloak] { display: none !important; }
 --}}
 
 @props([
@@ -15,6 +21,7 @@
         x-on:click="modalIsOpen = true" 
         type="button"
         el="button"
+        aria-haspopup="dialog"
     >
         {{ $title }}
     </x-button>

@@ -16,18 +16,23 @@
 @endphp
 
 @if ($id)
-    <article class="space-y-6">
-        @if ($featured_image_id)
-            <div class="w-full h-0 pb-[56.25%] relative">
-                <figure class="absolute inset-0">
-                    <x-image :id="$featured_image_id"/>
-                </figure>
-            </div>
-        @endif
-        
-        <h3>{{ $title }}</h3>
-        
-        <p>{{ $excerpt }}</p>
+    <article 
+        class="space-y-6 h-full flex flex-col items-start justify-between gap-4"
+        tabindex="0"
+    >
+        <div>
+            @if ($featured_image_id)
+                <div class="w-full h-0 pb-[56.25%] relative">
+                    <figure class="absolute inset-0">
+                        <x-image :id="$featured_image_id"/>
+                    </figure>
+                </div>
+            @endif
+            
+            <h3>{{ $title }}</h3>
+            
+            <p>{{ $excerpt }}</p>
+        </div>
         
         <x-button href="{{ $permalink }}">Läs mer</x-button>
     </article>

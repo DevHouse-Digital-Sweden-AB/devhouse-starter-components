@@ -1,6 +1,8 @@
 {{-- 
     Component: Accordion
-    Requires: Tailwind CSS, Alpine.js, Alpine.js Collapse plugin
+    Requires: Tailwind CSS, 
+              Alpine.js: https://alpinejs.dev/essentials/installation, 
+              Alpine.js Collapse plugin
 --}}
 
 @props([
@@ -26,13 +28,13 @@
             >
                 <button
                   type="button" 
-                  class="w-full flex items-center justify-between py-4 cursor-pointer" 
+                  class="w-full flex items-center justify-between py-4 cursor-pointer"
                   :aria-expanded="activeAccordion === 'accordion-{{ $unique_id }}'" 
                   aria-controls="accordion-{{ $unique_id }}" 
                   x-on:click="activeAccordion = (activeAccordion === 'accordion-{{ $unique_id }}' ? activeAccordion = null : activeAccordion = 'accordion-{{ $unique_id }}')" 
                   aria-expanded="false"
                 >
-                    <h4 class="flex-1 text-left">{{ $item_title }}</h4>
+                    <h4 class="flex-1 text-left group-[.active]:font-bold">{{ $item_title }}</h4>
                     <span class="shrink-0 group-[.active]:rotate-180">&uarr;</span>
                 </button>
     
@@ -42,7 +44,9 @@
                     x-show="activeAccordion === 'accordion-{{ $unique_id }}'"
                     role="region"
                     x-collapse.duration.200ms
-                >{{ $item_content }}</div>
+                >
+                    <div class="pb-4">{{ $item_content }}</div>
+                </div>
             </li>
         @endforeach
     </ul>

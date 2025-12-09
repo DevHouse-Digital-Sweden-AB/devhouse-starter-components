@@ -1,6 +1,9 @@
 {{-- 
     Component: Tabs
-    Requires: Tailwind CSS, Alpine.js, Alpine.js Collapse plugin, Alpine.js Focus plugin
+    Requires: Tailwind CSS, 
+              Alpine.js: https://alpinejs.dev/essentials/installation, 
+              Alpine.js Collapse plugin, 
+              Alpine.js Focus plugin
 --}}
 
 @props([
