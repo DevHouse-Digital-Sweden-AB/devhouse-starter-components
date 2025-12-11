@@ -1,8 +1,11 @@
 {{-- 
     Component: Accordion
     Requires: Tailwind CSS, 
-              Alpine.js: https://alpinejs.dev/essentials/installation, 
+              Alpine.js, 
               Alpine.js Collapse plugin
+              
+    Installation Guide: https://github.com/DevHouse-Digital-Sweden-AB/devhouse-starter-components
+    
 --}}
 
 @props([

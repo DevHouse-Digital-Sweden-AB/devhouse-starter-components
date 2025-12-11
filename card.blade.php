@@ -29,9 +29,13 @@
                 </div>
             @endif
             
-            <h3>{{ $title }}</h3>
+            @if ($title)
+                <h3>{{ $title }}</h3>
+            @endif
             
-            <p>{{ $excerpt }}</p>
+            @if ($excerpt)
+                <p>{{ $excerpt }}</p>
+            @endif
         </div>
         
         <x-button href="{{ $permalink }}">Läs mer</x-button>

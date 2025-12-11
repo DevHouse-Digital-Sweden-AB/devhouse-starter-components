@@ -9,9 +9,9 @@
 
 {{-- Hero content --}}
 <x-container class="space-y-8 relative z-1">
-    <h1 class="text-6xl font-bold text-pretty">Oliver is 100% talking to the guy at 11:30.</h1>
+    <h1 class="text-6xl font-bold text-pretty">Example heading text</h1>
     
-    <p class=" text-xl text-pretty">Ingress här...</p>
+    <p class=" text-xl text-pretty">Example intro text</p>
     
     <ul class="flex flex-wrap items-center gap-4">
         <li>
