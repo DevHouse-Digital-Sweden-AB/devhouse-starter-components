@@ -13,7 +13,7 @@
     default => 'bg-black text-white hover:opacity-50 focus:opacity-50'
 })
 
-<{{ $el }} {{ $attributes->merge(['class' => "inline-flex items-center p-4 !no-underline cursor-pointer {$class}"]) }}>{{ $slot }}</{{ $el }}>
+<{{ $el }} {{ $attributes->merge(['class' => "dh-button inline-flex items-center p-4 !no-underline cursor-pointer {$class}"]) }}>{{ $slot }}</{{ $el }}>
 
 
 {{-- Example button group list

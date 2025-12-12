@@ -3,4 +3,4 @@
     Requires: Tailwind CSS
 --}}
 
-<section {{ $attributes->merge(['class' => 'py-20']) }}>{{ $slot }}</section>
+<section {{ $attributes->merge(['class' => 'dh-section py-20']) }}>{{ $slot }}</section>

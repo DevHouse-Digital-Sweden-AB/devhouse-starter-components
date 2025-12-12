@@ -14,7 +14,7 @@
 
 @if (! empty($items))
     <ul 
-        class="accordion divide-y" 
+        class="dh-accordion divide-y" 
         x-data="{ activeAccordion: false }"
         @keydown.escape.window="activeAccordion = false"
     >

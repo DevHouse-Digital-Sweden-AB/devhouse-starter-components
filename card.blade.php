@@ -17,7 +17,7 @@
 
 @if ($id)
     <article 
-        class="space-y-6 h-full flex flex-col items-start justify-between gap-4"
+        class="dh-card space-y-6 h-full flex flex-col items-start justify-between gap-4"
         tabindex="0"
     >
         <div>

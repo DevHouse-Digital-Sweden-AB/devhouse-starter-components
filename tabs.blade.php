@@ -18,7 +18,10 @@
 @endphp
 
 @if (! empty($items))
-    <div x-data="{ selectedTab: 'tab-{{ $unique_id }}-0' }" class="w-full">
+    <div 
+        x-data="{ selectedTab: 'tab-{{ $unique_id }}-0' }" 
+        class="dh-tabs w-full"
+    >
 
         {{-- Tab buttons --}}
     	<ul 

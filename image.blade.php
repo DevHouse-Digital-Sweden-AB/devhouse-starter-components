@@ -6,7 +6,7 @@
 @props([
     'id' => null,
     'size' => 'large',
-    'class' => 'w-full h-full object-cover',
+    'class' => 'dh-image w-full h-full object-cover',
     'loading' => 'lazy' // or eager
 ])
 

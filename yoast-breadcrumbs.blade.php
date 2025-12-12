@@ -3,7 +3,7 @@
     Requires: Tailwind CSS
 --}}
 
-{!! function_exists('yoast_breadcrumb') ? yoast_breadcrumb('<nav aria-label="breadcrumbs" id="breadcrumbs">', '</nav>') : '' !!}
+{!! function_exists('yoast_breadcrumb') ? yoast_breadcrumb('<nav  class="dh-breadcrumbs" aria-label="breadcrumbs" id="breadcrumbs">', '</nav>') : '' !!}
 
 {{--
     For accessible breadcrumbs:

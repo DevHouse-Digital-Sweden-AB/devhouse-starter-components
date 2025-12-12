@@ -18,7 +18,7 @@
 @endphp
 
 @if (! empty($posts))
-    <div class="space-y-8">
+    <div class="dh-post-grid space-y-8">
         <ul @class([
             'grid grid-cols-12 gap-8 gap-y-12',
             'facetwp-template' => array_key_exists('facetwp', $args)

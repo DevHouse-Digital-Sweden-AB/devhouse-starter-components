@@ -18,7 +18,10 @@
 ])
 
 @if ($button_text && $modal_content)
-    <div x-data="{ modalIsOpen: false }">
+    <div 
+        x-data="{ modalIsOpen: false }"
+        class="dh-modal"
+    >
         
         {{-- Modal button --}}
         <x-button 

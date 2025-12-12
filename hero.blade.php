@@ -8,7 +8,7 @@
 ])
 
 {{-- Hero content --}}
-<x-container class="space-y-8 relative z-1">
+<x-container class="dh-hero space-y-8 relative z-1">
     <h1 class="text-6xl font-bold text-pretty">Example heading text</h1>
     
     <p class=" text-xl text-pretty">Example intro text</p>
